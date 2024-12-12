@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Stock - Inventory Tracking</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body id="app-body">
+    <nav id="app-nav">
+        <a href="{{ url_for('index') }}">Quick Stock Home</a>
+        <a href="{{ url_for('add_product') }}">Add Product</a>
+      {% if 'user_id' in session %}
+         <a href="{{ url_for('logout') }}">Logout</a>
+      {% else %}
+         <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('register') }}">Register</a>
+      {% endif %}
+    </nav>
+    <div class="container" id="app-container">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

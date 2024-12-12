@@ -1,0 +1,134 @@
+/* Default Theme */
+#app-body {
+    font-family: sans-serif;
+    background-color: #edf2fa; /* Light Gray */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#app-nav {
+    background-color: #d7e3fc; /* Light Blue */
+    padding: 10px;
+}
+
+#app-nav a {
+    margin-right: 10px;
+}
+
+#app-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#page-heading {
+    color: #abc4ff; /* Dark Blue */
+}
+
+#inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#inventory-table, #inventory-table th, #inventory-table td {
+    border: 1px solid #d7e3fc;
+    padding: 8px;
+    text-align: left;
+}
+
+#inventory-table th {
+    background-color: #c1d3fe; /* Medium Blue */
+    color: white;
+}
+
+#inventory-table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+input[type=text], input[type=number], input[type=password] {
+    padding: 10px;
+    margin: 5px 0 10px 0;
+    border: 1px solid #d7e3fc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #abc4ff; /* Dark Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c1d3fe; /* Medium Blue */
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Example of a Dark Theme - you can switch the class at the body*/
+#app-body.dark-theme {
+  background-color: #333;
+  color: #eee;
+}
+
+#app-nav.dark-theme {
+  background-color: #555;
+}
+
+#app-container.dark-theme {
+  background-color: #444;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+#page-heading.dark-theme {
+  color: #aaa;
+}
+
+#inventory-table.dark-theme, #inventory-table.dark-theme th, #inventory-table.dark-theme td {
+  border: 1px solid #666;
+}
+
+#inventory-table.dark-theme th {
+  background-color: #777;
+  color: #fff;
+}
+
+#inventory-table.dark-theme tbody tr:nth-child(odd) {
+  background-color: #555;
+}
+
+#app-nav.dark-theme a, #edit-link.dark-theme, #delete-link.dark-theme {
+    color: #ddd;
+}
+#app-nav.dark-theme a:hover, #edit-link.dark-theme:hover, #delete-link.dark-theme:hover {
+  text-decoration: underline;
+}
+input[type=text].dark-theme, input[type=number].dark-theme, input[type=password].dark-theme {
+    border: 1px solid #666;
+  background-color: #666;
+  color: #fff;
+}
+button.dark-theme {
+    background-color: #555;
+    color: #fff;
+}
+
+button.dark-theme:hover {
+    background-color: #777;
+}
