@@ -1,5 +1,6 @@
-sequenceDiagram
 
+```mermaid
+sequenceDiagram
     participant User
     participant Browser
     participant Flask_App
@@ -72,3 +73,4 @@ User ->> Browser: Access /delete_product/1
   Browser -->> Flask_App: GET /logout
   Flask_App -->> Flask_App: Clear Session
   Flask_App -->> Browser: Redirect to /login
+```
